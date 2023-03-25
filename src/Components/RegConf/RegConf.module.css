@@ -1,0 +1,76 @@
+.element_animation input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: rgb(52, 56, 61);
+    border-radius: 10px;
+}
+  
+.element_animation input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(52, 56, 61);
+    outline: none;
+    color: white;
+}
+  
+.confirmbtn {
+    background-color: #34eb9e;
+    color: white;
+    font-size: 17px;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    transition: .4s;
+}
+  
+.confirmbtn:hover {
+    color: #34eb9e;
+    background-color: rgb(52, 56, 61);
+	text-shadow: 0 0 10px #34eb9e;
+	cursor: pointer;
+}
+  
+.a {
+    color: dodgerblue;
+}
+
+.h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 55px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.p {
+    color: white;
+    padding-bottom: 35px;
+}
+
+.element_animation label {
+    color: white;
+}
+
+.content {
+    max-width: 1500px;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.element_animation {
+    opacity: 0;
+}
+
+.element_animation.element_show {
+    opacity: 1;
+    transition: opacity 2s;
+}

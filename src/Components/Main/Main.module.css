@@ -1,0 +1,67 @@
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 55px;
+}
+
+.h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.h4 {
+    color: rgba(205, 204, 255, 0.8);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.span {
+    color: #34eb9e;
+}
+
+.newslatter {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newslatter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #34eb9e;
+    outline: none;
+    border-radius: 30px;
+}
+
+.newslatter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #34eb9e;
+    color: white;
+    box-shadow: 0px 0px 5px #34eb9e, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.element_animation {
+    opacity: 0;
+}
+
+.element_animation.element_show {
+    opacity: 1;
+    transition: opacity 2s;
+}

@@ -1,0 +1,43 @@
+.logo {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.span {
+    color: #34eb9e;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #34eb9e;
+    transition: .4s;
+}
