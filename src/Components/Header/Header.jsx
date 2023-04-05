@@ -1,20 +1,19 @@
+import { useNavigate } from 'react-router-dom';
 import header from './Header.module.css';
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from 'react-router-dom';
 
 const Header = () => {
+
+  const navigate = useNavigate();
+
+
   return (
     <nav className={header.nav}>
         <h2 className={header.logo}>WEB <span className={header.span}>BeatMaker</span></h2>
         <ul>
-            <li><a href='/'>Главная</a></li>
-            <li><a href='/'>О наc</a></li>
-            <li><a href='/login'>Вход</a></li>
+            <li onClick={() => {navigate('/');}}><a >Главная</a></li>
+            <li><a >О нас</a></li>
+            <li onClick={() => {navigate('/login');}}><a >Вход</a></li>
         </ul>
     </nav>
   );

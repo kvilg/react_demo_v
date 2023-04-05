@@ -1,7 +1,7 @@
 import Header from './Components/Header/Header';
 import './App.css';
 import Main from './Components/Main/Main';
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -14,15 +14,22 @@ import RegConf from './Components/RegConf/RegConf';
 
 
 const App = () => {
+
+  const [emailRoot,setEmailRoot] = useState("");
+
+  const [loginRoot,setLoginRoot] = useState("");
+
+  console.log("login == "+loginRoot);
+
   return (
     <div className='App'>
-      <Header />
       <Router>
+        <Header />
         <Routes>
-          <Route path="/" element={<Main/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/reg" element={<Registration/>} />
-          <Route path="/regc" element={<RegConf/>} />
+          <Route path="/" element={<Main setEmailRoot={setEmailRoot}/>} />
+          <Route path="/login" element={<Login setLoginRoot={setLoginRoot}/>} />
+          <Route path="/registration" element={<Registration email={emailRoot}/>} />
+          <Route path="/regc" element={<RegConf login={loginRoot}/>} />
         </Routes>
       </Router>
     </div>
